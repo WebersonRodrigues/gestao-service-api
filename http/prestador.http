@@ -1,0 +1,26 @@
+POST HTTP://localhost:3000/prestadores
+Content-Type: application/json
+Authorization: d074e234fae19f84574ec9e59b7135f5
+
+{
+    "nome":"Monoel"
+}
+
+###
+GET HTTP://localhost:3000/prestadores/2
+Authorization: d5ae2c81d59ff67556339cb411f026fa
+
+###
+GET HTTP://localhost:3000/prestadores
+Authorization: a904f78152ce64cbcf2050bcab26e67b
+
+###
+
+PUT HTTP://localhost:3000/prestadores/2
+Content-Type: application/json
+Authorization: 20f4ee9491b189de8b737d46c34ae8cb
+
+{
+    "descricao":"Pintura interior m2",
+    "valor": 100.0,    
+}

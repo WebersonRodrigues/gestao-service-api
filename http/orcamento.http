@@ -1,0 +1,144 @@
+POST HTTP://localhost:3000/orcamentos
+Content-Type: application/json
+Authorization: 0b9f896e4d8ad519df25e64876c51554
+
+{
+  "id": "15",
+  "descricao": "Orcamento Teste B",
+  "cliente": {
+    "id": "1",
+    "nome": "Ciclano de Tal",
+    "cpfOuCnpj": "12345678912",
+    "telefone": "21982536395",
+    "enderecos": []
+  },
+  "itens": [
+    {
+      "id": "12",
+      "servico": {
+        "id": "1",
+        "descricao": "Pintura Interior m2",
+        "observacao": null,
+        "valor": 100
+      },
+      "prestador": {
+        "id": "3",
+        "nome": "Joao",
+        "email": null,
+        "cpfOuCnpj": null,
+        "telefone": null,
+        "observacao": null,
+        "criadoEm": "2021-12-10T08:51:00.962Z"
+      },
+      "desconto": 0,
+      "acrescimo": 100,
+      "valor": 7500,
+      "valorTotal": 7600,
+      "observacao": null,
+      "criadoEm": "2021-12-10T08:39:49.234Z"
+    },
+    {
+      "id": "3",
+      "servico": {
+        "id": "1",
+        "descricao": "Pintura Interior m2",
+        "observacao": null,
+        "valor": 100
+      },
+      "prestador": {
+        "id": "2",
+        "nome": "José",
+        "email": null,
+        "cpfOuCnpj": null,
+        "telefone": null,
+        "observacao": null,
+        "criadoEm": "2021-12-10T08:51:00.962Z"
+      },
+      "desconto": 100,
+      "acrescimo": 2000,
+      "valor": 2000,
+      "valorTotal": 3900,
+      "observacao": null,
+      "criadoEm": "2021-12-10T08:39:15.021Z"
+    }
+  ],
+  "desconto": 0,
+  "acrescimo": 0,
+  "valorTotal": 0,
+  "criadoEm": "2021-12-08T22:57:03.007Z",
+  "atualizadoEm": "2021-12-08T22:57:03.007Z"
+}
+
+###
+GET HTTP://localhost:3000/orcamentos/15
+Authorization: d5ae2c81d59ff67556339cb411f026fa
+
+###
+GET HTTP://localhost:3000/orcamentos
+Authorization: a904f78152ce64cbcf2050bcab26e67b
+
+###
+
+PUT HTTP://localhost:3000/orcamentos/15
+Content-Type: application/json
+Authorization: 20f4ee9491b189de8b737d46c34ae8cb
+
+{
+  "id": "15",
+  "descricao": "Orcamento Teste A",
+  "itens": [
+    {
+      "id": "3",
+      "servico": {
+        "id": "1",
+        "descricao": "Pintura Interior m2",
+        "observacao": null,
+        "valor": 100
+      },
+      "prestador": {
+        "id": "2",
+        "nome": "José",
+        "email": null,
+        "cpfOuCnpj": null,
+        "telefone": null,
+        "observacao": null,
+        "criadoEm": "2021-12-10T08:51:00.962Z"
+      },
+      "desconto": 100,
+      "acrescimo": 2000,
+      "valor": 2000,
+      "valorTotal": 3900,
+      "observacao": null,
+      "criadoEm": "2021-12-10T08:39:15.021Z"
+    },
+    {
+      "id": "12",
+      "servico": {
+        "id": "1",
+        "descricao": "Pintura Interior m2",
+        "observacao": null,
+        "valor": 100
+      },
+      "prestador": {
+        "id": "3",
+        "nome": "Joao",
+        "email": null,
+        "cpfOuCnpj": null,
+        "telefone": null,
+        "observacao": null,
+        "criadoEm": "2021-12-10T08:51:00.962Z"
+      },
+      "desconto": 0,
+      "acrescimo": 100,
+      "valor": 7500,
+      "valorTotal": 7600,
+      "observacao": null,
+      "criadoEm": "2021-12-10T08:39:49.234Z"
+    }
+  ],
+  "desconto": 0,
+  "acrescimo": 0,
+  "valorTotal": 0,
+  "criadoEm": "2021-12-08T22:57:03.007Z",
+  "atualizadoEm": "2021-12-08T22:57:03.007Z"
+}

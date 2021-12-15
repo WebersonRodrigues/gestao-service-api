@@ -1,0 +1,83 @@
+POST HTTP://localhost:3000/clientes
+Content-Type: application/json
+Authorization: d9312ac03cebab023f03c8a4230c3479
+
+{
+    "nome":"Ciclano de Tal",
+    "email":"Ciclano@gmail.com",
+    "cpfOuCnpj":"12345678912",
+    "telefone": "21982536395",
+    "enderecos": [
+        {
+            "cep":"25970563",
+            "rua": "rua torta",
+            "numero": "53",
+            "complemento": "Casa 2 - Fundos",
+            "bairro": "Lugar nenhum",
+            "cidade":"Imaginaria",
+            "uf": "RJ"
+        },
+        {
+            "cep":"28000000",
+            "rua": "Rua XYZ",
+            "numero": "852",
+            "complemento": "APT 405 - Bloco C",
+            "bairro": "Costinha",
+            "cidade":"Brasilandia",
+            "uf": "MG"
+        }
+    ]
+}
+
+###
+
+
+GET HTTP://localhost:3000/clientes/2
+Authorization: d5ae2c81d59ff67556339cb411f026fa
+
+###
+GET HTTP://localhost:3000/clientes
+Authorization: 
+
+###
+
+PUT HTTP://localhost:3000/clientes/2
+Content-Type: application/json
+Authorization: 20f4ee9491b189de8b737d46c34ae8cb
+
+{
+  "nome": "Fulano de Tal da Silva",
+  "email": "fulanosilva@gmail.com",
+  "cpfOuCnpj": "12345678911",
+  "telefone": "21982536388",
+  "enderecos": [
+    {
+      "id": "2",
+      "idCliente": "2",
+      "cep": "25970564",
+      "rua": "rua torta A",
+      "complemento": "Casa 3 - Fundos",
+      "numero": "55",
+      "bairro": "Lugar nenhum",
+      "cidade": "Imaginaria",
+      "uf": "SP",
+      "criadoEm": "2021-12-04T02:38:50.257Z",
+      "atualizadoEm": "2021-12-04T02:38:50.257Z"
+    },
+    {
+      "id": "3",
+      "idCliente": "2",
+      "cep": "28900000",
+      "rua": "Rua XYZ",
+      "complemento": "APT 405 - Bloco C",
+      "numero": "852",
+      "bairro": "Costinha",
+      "cidade": "Brasilandia",
+      "uf": "MG",
+      "criadoEm": "2021-12-04T02:39:08.876Z",
+      "atualizadoEm": "2021-12-04T02:39:08.876Z"
+    }
+  ],
+  "criadoEm": "2021-12-04T02:38:33.731Z",
+  "atualizadoEm": "2021-12-04T02:38:33.731Z"
+}

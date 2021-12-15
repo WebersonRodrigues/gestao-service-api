@@ -1,0 +1,43 @@
+POST HTTP://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email":"administradorservice@gmail.com",
+    "senha":"123456"
+}
+
+###
+
+DELETE HTTP://localhost:3000/logout
+Authorization: 14532560ddc7916aa8a85b6cd1fc5ae7
+
+###
+
+GET HTTP://localhost:3000/usuarios/
+Authorization: 5ed23649b4c993b2782ed3e3d74c838e
+
+###
+POST HTTP://localhost:3000/usuarios
+Content-Type: application/json
+Authorization: 5ed23649b4c993b2782ed3e3d74c838e
+
+{
+    "nome":"Joao",
+    "email":"Joao@gmail.com",
+    "senha": "654321",
+    "idPerfil": 2
+}
+
+###
+PUT HTTP://localhost:3000/usuarios/6
+Content-Type: application/json
+Authorization: 5ed23649b4c993b2782ed3e3d74c838e
+
+{
+  "nome":"Joao Lima",
+  "email":"Joaolima@gmail.com",
+  "idPerfil": 3,
+  "criadoEm": "2021-11-30T00:59:21.210Z",
+  "atualizadoEm": "2021-11-30T00:59:21.210Z"
+}
+
